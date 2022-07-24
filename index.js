@@ -13,23 +13,3 @@ app.get("/Shopping", Shopping);
 function Shopping(request, response) {
   response.send(elements);
 }
-app.post("/register", register);
-function register(request, response) {
-  response.send(elements);
-}
-app.post("/card", card);
-function card(request, response) {
-  response.send(elements);
-}
-app.post("/login", login);
-function login(request, response) {
-  response.send(elements);
-}
-app.patch("/Shopping/:id", Shoppingid);
-function Shoppingid(request, response) {
-  response.send(elements);
-}
-app.post("/Shopping/:id", alldata);
-function alldata(request, response) {
-  response.send(elements);
-}
