@@ -18,12 +18,12 @@ function Shopping(request, response) {
   response.send(elements.Shopping);
 }
 
-app.put("/Shopping/:id", Shopping);
+// app.put("/Shopping/:id", Shopping);
 
-function Shopping(request, response) {
-  const accountId = request.params.id;
-  response.send(elements.Shopping[accountId]);
-}
+// function Shopping(request, response) {
+//   const accountId = request.params.id;
+//   response.send(elements.Shopping[accountId]);
+// }
 
 app.post("/Shopping/card", card);
 
@@ -35,10 +35,10 @@ function card(request, response) {
   response.send(elements.card);
 }
 
-app.patch("/Shopping/card/:id", card);
-function card(request, response) {
-  response.send(elements.card);
-}
+// app.patch("/Shopping/card/:id", card);
+// function card(request, response) {
+//   response.send(elements.card);
+// }
 app.post("/login", Login);
 function Login(request, response) {
   response.send(elements.login);
