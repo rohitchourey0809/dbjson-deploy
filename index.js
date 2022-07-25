@@ -18,7 +18,7 @@ function Shopping(request, response) {
   response.send(elements.Shopping);
 }
 
-app.post("/Shopping/:id", Shopping);
+app.get("/Shopping/:id", Shopping);
 function Shopping(request, response) {
   response.send(elements.Shopping);
 }
