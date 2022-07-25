@@ -27,14 +27,6 @@ app.get("/Shopping:id", Shopping);
 function Shopping(request, response) {
   response.send(elements.Shopping);
 }
-app.post("/Shopping/register", Register);
-function Register(request, response) {
-  response.send(elements.register);
-}
-app.get("/Shopping/register", Register);
-function Register(request, response) {
-  response.send(elements.register);
-}
 
 app.post("/Shopping/card", card);
 function card(request, response) {
@@ -56,6 +48,14 @@ function Login(request, response) {
 app.get("/login", Login);
 function Login(request, response) {
   response.send(elements.login);
+}
+app.post("/register", Register);
+function Register(request, response) {
+  response.send(elements.register);
+}
+app.get("/register", Register);
+function Register(request, response) {
+  response.send(elements.register);
 }
 
 app.post("/payment", Payment);
