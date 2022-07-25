@@ -17,13 +17,37 @@ app.post("/Shopping", Shopping);
 function Shopping(request, response) {
   response.send(elements.Shopping);
 }
-app.post("/register", Register);
+
+app.post("/Shopping:id", Shopping);
+function Shopping(request, response) {
+  response.send(elements.Shopping);
+}
+
+app.get("/Shopping:id", Shopping);
+function Shopping(request, response) {
+  response.send(elements.Shopping);
+}
+app.post("/Shopping/register", Register);
 function Register(request, response) {
   response.send(elements.register);
 }
-app.get("/register", Register);
+app.get("/Shopping/register", Register);
 function Register(request, response) {
   response.send(elements.register);
+}
+
+app.post("/Shopping/card", card);
+function card(request, response) {
+  response.send(elements.card);
+}
+app.get("/Shopping/card", card);
+function card(request, response) {
+  response.send(elements.card);
+}
+
+app.delete("/Shopping/card:id", card);
+function card(request, response) {
+  response.send(elements.card);
 }
 app.post("/login", Login);
 function Login(request, response) {
