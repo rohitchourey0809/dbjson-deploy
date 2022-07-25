@@ -18,12 +18,17 @@ function Shopping(request, response) {
   response.send(elements.Shopping);
 }
 
-app.patch("/Shopping/:id", Shopping);
+app.get("/Shopping/:id", Shopping);
 function Shopping(request, response) {
-  response.send(elements.Shopping);
+  var word = request.params.id;
+  console.log(word);
+  if (word) {
+    response.send(elements.Shopping[word]);
+  }
 }
 
 app.post("/Shopping/card", card);
+
 function card(request, response) {
   response.send(elements.card);
 }
