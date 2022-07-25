@@ -18,12 +18,9 @@ function Shopping(request, response) {
   response.send(elements.Shopping);
 }
 
-app.get("/Shopping/:id", Shopping);
+app.patch("/Shopping/:id/", Shopping);
+
 function Shopping(request, response) {
-  // var word = request.paramss.id;
-  // console.log(word);
-  // if (word) {
-  //   response.send(elements.Shopping[word]);
   response.send(elements.Shopping);
 }
 
