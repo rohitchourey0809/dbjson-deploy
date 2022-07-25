@@ -18,10 +18,11 @@ function Shopping(request, response) {
   response.send(elements.Shopping);
 }
 
-app.get("/Shopping/:id", Shopping);
+app.put("/Shopping/:id", Shopping);
 
 function Shopping(request, response) {
-  response.send(elements.Shopping);
+  const accountId = request.params.id;
+  response.send(elements.Shopping[accountId]);
 }
 
 app.post("/Shopping/card", card);
