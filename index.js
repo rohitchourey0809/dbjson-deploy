@@ -20,11 +20,11 @@ function Shopping(request, response) {
 
 app.get("/Shopping/:id", Shopping);
 function Shopping(request, response) {
-  var word = request.paramss.id;
-  console.log(word);
-  if (word) {
-    response.send(elements.Shopping[word]);
-  }
+  // var word = request.paramss.id;
+  // console.log(word);
+  // if (word) {
+  //   response.send(elements.Shopping[word]);
+  response.send(elements.Shopping);
 }
 
 app.post("/Shopping/card", card);
