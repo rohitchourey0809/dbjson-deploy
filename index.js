@@ -18,12 +18,7 @@ function Shopping(request, response) {
   response.send(elements.Shopping);
 }
 
-app.get("/Shopping/:id", Shopping);
-function Shopping(request, response) {
-  response.send(elements.Shopping);
-}
-
-app.get("/Shopping/:id", Shopping);
+app.patch("/Shopping/:id", Shopping);
 function Shopping(request, response) {
   response.send(elements.Shopping);
 }
@@ -37,7 +32,7 @@ function card(request, response) {
   response.send(elements.card);
 }
 
-app.delete("/Shopping/card:id", card);
+app.patch("/Shopping/card/:id", card);
 function card(request, response) {
   response.send(elements.card);
 }
