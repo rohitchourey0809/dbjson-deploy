@@ -20,7 +20,7 @@ function Shopping(request, response) {
 
 app.get("/Shopping/:id", Shopping);
 function Shopping(request, response) {
-  var word = request.params.id;
+  var word = request.paramss.id;
   console.log(word);
   if (word) {
     response.send(elements.Shopping[word]);
