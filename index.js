@@ -21,8 +21,7 @@ function Shopping(request, response) {
 app.get("/Shopping/:id", Shopping);
 
 function Shopping(request, response) {
-  const id = req.params.id;
-  if (elements.Shopping[id]) response.send(elements.Shopping[id]);
+  response.send(elements.Shopping);
 }
 
 app.post("/Shopping/card", card);
